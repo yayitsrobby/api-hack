@@ -15,7 +15,7 @@
       <h4>Assisting your procrastination since 2016</h4>
     </header>
 
-    <section class="splash-page hidden">
+    <section class="splash-page">
       <h1>HOW DO YOU WANT TO SEARCH?</h1>
       <button class="mood-button">By Mood</button>
       <button class="classic-button">Classic Search</button>
@@ -25,7 +25,8 @@
     <section class="mood-section hidden">
       <h2>How are you feeling right now?</h2>
 
-      <select name="mood-choice">
+      <select class="mood-choice">
+      	<option disabled selected value>--select mood--</option>
         <option value="happy">Happy</option>
         <option value="sad">Sad</option>
         <option value="angry">Angry</option>
@@ -39,11 +40,11 @@
     </section>
 
     <!-- originally hidden -->
-    <section class="classic-section">
+    <section class="classic-section hidden">
       <h2>Classic Search</h2>
 
       <input type="text" placeholder="put your search here">
-      <input type="button" value="Search">
+      <input type="button" value="Search" class="search-submit">
 
       <div class="classic-recs">
 
