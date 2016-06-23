@@ -1,8 +1,17 @@
 body {
-	/*background-image: url(../img/bg1.jpeg);*/
-	background-size: cover;
+  /*background-image: url(../img/bg1.jpeg);*/
+  background-size: cover;
 }
 
-header h1 h2 {
-	text-align: center;
+.wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Boredom Killer</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Boredom Killer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<header>
-		<h1>Boredom Killer</h1>
-		<h2>tagline</h2>
-	</header>
+  <div class="wrapper">
+    <header>
+      <h1>Boredom Killer</h1>
+      <h3>tagline</h3>
+    </header>
 
-	<section class="splash-page">
-		<h2>Which method of search?</h2>
-		<button class="mood-button">By Mood</button>
-		<button class="classic-button">Classic Search</button>
-	</section>
+    <section class="splash-page">
+      <h2>Which method of search?</h2>
+      <button class="mood-button">By Mood</button>
+      <button class="classic-button">Classic Search</button>
+    </section>
 
-	<section class="mood-section">
-		<h2>How are you feeling right now?</h2>
+    <section class="mood-section hidden">
+      <h2>How are you feeling right now?</h2>
 
-		<select name="mood-choice">
-  			<option value="happy">Happy</option>
-  			<option value="sad">Sad</option>
-			<option value="angry">Angry</option>
-  			<option value="sappy">Sappy</option>
-		</select>
+      <select name="mood-choice">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+        <option value="sappy">Sappy</option>
+      </select>
 
-		<div class="mood-recs">
+      <div class="mood-recs">
 
-		</div>
-		
-	</section>
+      </div>
 
-	<section class="classic-section">
+    </section>
 
-		<h2>Classic Search</h2>
+    <section class="classic-section hidden">
 
-		<input type="text" placeholder="put your search here">
-		<input type="button" value="Search">
+      <h2>Classic Search</h2>
 
-		<div class="classic-recs">
+      <input type="text" placeholder="put your search here">
+      <input type="button" value="Search">
 
-		</div>
-		
-	</section>
+      <div class="classic-recs">
 
-	<section class="template hidden">
-		<h3>Title (2003)</h3>
+      </div>
 
-		<p class="ratings">IMDb: 6.7</p>
-		<p class="ratings">Rotten Tomatoes: 58.9</p>
+    </section>
 
-		<p class="crew">Director: JJ Abrams</p>
-		<p class="crew">Cast: Brad Pitt, Julia Roberts</p>
+    <section class="template hidden">
+      <h3>Title (2003)</h3>
 
-		<div class="movie-image">
-			<a href="#"><img src="http://lorempixel.com/400/200/people"></a>
-		</div>
+      <p class="ratings">IMDb: 6.7</p>
+      <p class="ratings">Rotten Tomatoes: 58.9</p>
 
-	</section>
+      <p class="crew">Director: JJ Abrams</p>
+      <p class="crew">Cast: Brad Pitt, Julia Roberts</p>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+      <div class="movie-image">
+        <a href="#"><img src="http://lorempixel.com/400/200/people"></a>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>
