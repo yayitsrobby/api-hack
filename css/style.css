@@ -1,6 +1,8 @@
 body {
-  /*background-image: url(../img/bg1.jpeg);*/
+  background-image: url(../img/bg1.jpeg);
   background-size: cover;
+  color: #bbb;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -10,8 +12,81 @@ body {
 
 header {
   text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+h1 {
+  font-family: 'Heebo', serif;
+}
+
+header h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+header h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
 }
 
 .hidden {
   display: none;
+}
+
+section {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.splash-page h1 {
+  font-size: 2em;
+}
+
+.splash-page button {
+  padding: 0.75em 1em;
+  border-radius: 2em;
+  /*  width: 10em;*/
+  border: 3px solid grey;
+  background-color: transparent;
+  color: #bbb;
+  font-size: 1em;
+}
+
+.mood-section h2 {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.template {
+  border: 3px solid #ddd;
+  border-radius: 2em;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.template h3,
+.template p,
+.template .movie-text,
+.template .movie-image {
+  display: inline-block;
+}
+
+.movie-text {
+  float: left;
+  width: 200px;
+}
+
+.movie-text h3,
+.movie-text p {
+  margin: 0.2em;
+}
+
+.movie-image img {
+  width: 300px;
+  float: right;
+}
+
+.movie-wrapper {
+  margin: 1em;
 }
