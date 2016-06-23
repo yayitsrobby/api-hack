@@ -25,3 +25,5 @@ output for both will show
 - featured actors
 - director
 - movie trailer
+
+https://wireframe.cc/CvNyg4
