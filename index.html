@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Boredom Killer</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Boredom Killer</h1>
+		<h2>tagline</h2>
+	</header>
+
+	<section class="splash-page">
+		<h2>Which method of search?</h2>
+		<button class="mood-button">By Mood</button>
+		<button class="classic-button">Classic Search</button>
+	</section>
+
+	<section class="mood-section">
+		<h2>How are you feeling right now?</h2>
+
+		<select name="mood-choice">
+  			<option value="happy">Happy</option>
+  			<option value="sad">Sad</option>
+			<option value="angry">Angry</option>
+  			<option value="sappy">Sappy</option>
+		</select>
+
+		<div class="mood-recs">
+
+		</div>
+		
+	</section>
+
+	<section class="classic-section">
+
+		<h2>Classic Search</h2>
+
+		<input type="text" placeholder="put your search here">
+		<input type="button" value="Search">
+
+		<div class="classic-recs">
+
+		</div>
+		
+	</section>
+
+	<section class="template hidden">
+		<h3>Title (2003)</h3>
+
+		<p class="ratings">IMDb: 6.7</p>
+		<p class="ratings">Rotten Tomatoes: 58.9</p>
+
+		<p class="crew">Director: JJ Abrams</p>
+		<p class="crew">Cast: Brad Pitt, Julia Roberts</p>
+
+		<div class="movie-image">
+			<a href="#"><img src="http://lorempixel.com/400/200/people"></a>
+		</div>
+
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
