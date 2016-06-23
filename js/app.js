@@ -25,6 +25,12 @@ $(document).ready(function() {
         });
     };
 
+    function moodGenres(mood) {
+    	if (mood === 'sad') {
+    		
+    	}
+    }
+
     // will take whatever tags and query the api and receive the
     // object and print the html
     function getClassicRecs(tags) {
