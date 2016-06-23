@@ -56,7 +56,7 @@ $(document).ready(function () {
   $('.mood-choice').change(function () {
     $('.mood-recs').empty();
     var selectedMood = $(this).find(':selected').val();
-    getMoodRecs(selectedMood);
+    // getMoodRecs(selectedMood);
   });
 
   // listen for Classic Search submit button
@@ -64,14 +64,33 @@ $(document).ready(function () {
     event.preventDefault();
     $('.classic-section').empty();
     var searchQuery = $(this).val();
-    getClassicRecs(searchQuery);
+    // getClassicRecs(searchQuery);
   });
-
-  // take the value given and pass it into a function that will query
-  // output the html elements - append to .mood-recs
-
-  // listen for submit button
-  // clear last .classic-recs
-  // take the value given and pass it into a function that will query
-  // output the html elements - append to .classic-recs
 });
+
+
+/*--- AJAX CALL ---*/
+
+//  $.ajax({
+//      method: 'GET',
+//      url: 'http://api.themoviedb.org/3/discover/movie',
+//      dataType: 'jsonp',
+//      data: {
+//        api_key: 'b036e4fb522494bd075e0c895ed017a0'
+//      }
+//    })
+//    .done(function (result) {
+//      console.log(result);
+//    })
+
+
+
+
+
+// take the value given and pass it into a function that will query
+// output the html elements - append to .mood-recs
+
+// listen for submit button
+// clear last .classic-recs
+// take the value given and pass it into a function that will query
+// output the html elements - append to .classic-recs
