@@ -23,10 +23,12 @@ $(document).ready(function () {
         var movieCast = movieResult.find('.cast');
         movieCast.text(credits[1] + ', ' + credits[2] + ', ' + credits[3]);
 
+        var movieLink = movieResult.find('.movie-image a');
+        movieLink.attr('href', 'https://youtube.com/')
         var movieImg = movieResult.find('.movie-image img');
         movieImg.attr('src', 'https://image.tmdb.org/t/p/w300_and_h450_bestv2/' + movieList.poster_path);
 
-        // console.log(movieList);
+        console.log(movieList);
 
 
 
@@ -55,6 +57,7 @@ $(document).ready(function () {
                 var id = value.id;
                 var movieUrl = 'http://api.themoviedb.org/3/movie/' + id + '/credits';
                 var cast = [];
+
                 $.ajax({
                     method: 'GET',
                     url: movieUrl,
@@ -70,7 +73,18 @@ $(document).ready(function () {
                     for (i = 0; i < 3; i++) {
                         cast.push(credits.cast[i].name);
                     }
-
+                    var videoUrl = 'http://api.themoviedb.org/3/movie/' + id + '/videos';
+                    $.ajax({
+                        method: 'GET',
+                        url: videoUrl,
+                        dataType: 'jsonp',
+                        data: {
+                            api_key: 'b036e4fb522494bd075e0c895ed017a0'
+                        }
+                    }).done(function (trailer) {
+                        //console.log(trailer.results[0].key);
+                        var trailerLink = 'http://youtu.be/' + trailer.results[0].key;
+                    })
                     var moviesQuery = showRecs(value, cast);
                     console.log(moviesQuery);
                     $('.mood-recs').append(moviesQuery);
