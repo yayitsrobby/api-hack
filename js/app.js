@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   // will query the api and receive the object and print
   // the html
-  function getMoodRecs(mood) {
+  function getMoodRecs(genre) {
     $.ajax({
       method: 'GET',
       url: '',
@@ -28,9 +28,21 @@ $(document).ready(function () {
   };
 
   function moodGenres(mood) {
+    var genre;
     if (mood === 'sad') {
-
+      genre = 'drama';
+    } else if (mood === 'happy') {
+      genre = 'animation';
+    } else if (mood === 'somber') {
+      genre = 'crime';
+    } else if (mood === 'sappy') {
+      genre = 'romance';
+    } else if (mood === 'scared') {
+      genre = 'horror';
+    } else {
+      genre = 'action';
     }
+    getMoodRecs(genre);
   }
 
   // will take whatever tags and query the api and receive the
@@ -56,7 +68,7 @@ $(document).ready(function () {
   $('.mood-choice').change(function () {
     $('.mood-recs').empty();
     var selectedMood = $(this).find(':selected').val();
-    // getMoodRecs(selectedMood);
+    moodGenres(selectedMood);
   });
 
   // listen for Classic Search submit button
