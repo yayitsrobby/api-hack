@@ -8,9 +8,23 @@ $(document).ready(function () {
 
     // will populate the html elements and return html
     function showRecs(movieList) {
-        $('.mood-choice').hide();
-        var movieResult = $('.template').clone();
-        movieResult();
+        // $('.mood-choice').hide();
+        var movieResult = $('.template .movie-wrapper').clone();
+
+        var movieTitle = movieResult.find('.title');
+        movieTitle.text(movieList.original_title + ' (' + movieList.release_date.slice(0, 4) + ')');
+
+        var movieRatings = movieResult.find('.ratings');
+        movieRatings.text(movieList.vote_average);
+
+        var movieDirector = movieResult.find('.director');
+        movieDirector.text(movieList.)
+
+        console.log(movieList);
+
+
+        return movieResult;
+
     }
 
     // will query the api and receive the object and print
@@ -25,10 +39,10 @@ $(document).ready(function () {
                 with_genres: genre
             }
         }).done(function (movies) {
-            console.log(result);
             $.each(movies.results, function (index, value) {
                 var moviesQuery = showRecs(value);
                 // $('.')
+                $('.mood-recs').append(moviesQuery);
             });
         });
     };
