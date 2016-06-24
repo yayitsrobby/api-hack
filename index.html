@@ -2,79 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Boredom Killer</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Heebo:700,900" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Boredom Killer</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Heebo:700,900" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Boredom Killer</h1>
-            <h4>Assisting your procrastination since 2016</h4>
-        </header>
+  <div class="wrapper">
+    <header>
+      <h1>Boredom Killer</h1>
+      <h4>Assisting your procrastination since 2016</h4>
+    </header>
 
-        <section class="splash-page">
-            <h1>HOW DO YOU WANT TO SEARCH?</h1>
-            <button class="mood-button">By Mood</button>
-            <button class="classic-button">Classic Search</button>
-        </section>
+    <section class="splash-page">
+      <h1>HOW DO YOU WANT TO SEARCH?</h1>
+      <button class="mood-button">By Mood</button>
+      <button class="classic-button">Classic Search</button>
+    </section>
 
-        <!-- originally hidden -->
-        <section class="mood-section hidden">
-            <h2>How are you feeling right now?</h2>
+    <!-- originally hidden -->
+    <section class="mood-section hidden">
+      <h2>How are you feeling right now?</h2>
 
-            <select class="mood-choice">
-                <option disabled selected value>--select mood--</option>
-                <option value="sad">Sad &#128546;</option>
-                <option value="angry">Angry &#128545;</option>
-                <option value="sappy">Sappy &#128525;</option>
-                <option value="happy">Happy &#128513;</option>
-                <option value="somber">Somber &#128542;</option>
-                <option value="scared">Scared &#128561;</option>
-            </select>
+      <select class="mood-choice">
+        <option disabled selected value>--select mood--</option>
+        <option value="sad">Sad &#128546;</option>
+        <option value="angry">Angry &#128545;</option>
+        <option value="sappy">Sappy &#128525;</option>
+        <option value="happy">Happy &#128513;</option>
+        <option value="somber">Somber &#128542;</option>
+        <option value="scared">Scared &#128561;</option>
+      </select>
 
-            <div class="mood-recs">
+      <div class="mood-recs">
 
-            </div>
+      </div>
 
-        </section>
+    </section>
 
-        <!-- originally hidden -->
-        <section class="classic-section hidden">
-            <h2>Classic Search</h2>
+    <!-- originally hidden -->
+    <section class="classic-section hidden">
+      <h2>Classic Search</h2>
 
-            <input type="text" placeholder="put your search here">
-            <input type="button" value="Search" class="search-submit">
+      <input type="text" placeholder="put your search here">
+      <input type="button" value="Search" class="search-submit">
 
-            <div class="classic-recs">
+      <div class="classic-recs">
 
-            </div>
+      </div>
 
-        </section>
+    </section>
 
-        <!-- originally hidden -->
-        <section class="template hidden">
-            <div class="movie-wrapper">
-                <div class="movie-text">
-                    <h3 class="title"></h3>
+    <!-- originally hidden -->
+    <section class="template hidden">
+      <div class="movie-wrapper">
+        <div class="movie-text">
+          <h3 class="title"></h3>
 
-                    <p class="ratings"></p>
-                    <!--    <p class="ratings">Rotten Tomatoes: 58.9</p> -->
+          <p class="ratings"></p>
+          <!--    <p class="ratings">Rotten Tomatoes: 58.9</p> -->
+          <p>Director:</p>
+          <p class="director"></p>
+          <p>Cast:</p>
+          <p class="cast"></p>
+        </div>
+        <div class="movie-image">
+          <a href=""><img src=""></a>
+        </div>
+      </div>
+    </section>
+  </div>
 
-                    <p class="director"></p>
-                    <p class="cast"></p>
-                </div>
-                <div class="movie-image">
-                    <a href=""><img src=""></a>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
