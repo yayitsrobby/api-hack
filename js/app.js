@@ -1,17 +1,16 @@
 $(document).ready(function () {
-    var sadGenres = ['drama', 'tv movie', 'family'];
-    var happyGenres = ['adventure', 'animation', 'comedy', 'family', 'fantasy'];
-    var somberGenres = ['crime', 'documentary', 'drama', 'mystery', 'thriller', 'war'];
-    var sappyGenres = ['romance', 'tv movie', 'comedy', 'drama', 'family'];
-    var scaredGenres = ['horror', 'mystery', 'thriller', 'drama', 'documentary'];
-    var angryGenres = ['action', 'crime', 'thriller'];
+    /*  var sadGenres = ['drama', 'tv movie', 'family'];
+      var happyGenres = ['adventure', 'animation', 'comedy', 'family', 'fantasy'];
+      var somberGenres = ['crime', 'documentary', 'drama', 'mystery', 'thriller', 'war'];
+      var sappyGenres = ['romance', 'tv movie', 'comedy', 'drama', 'family'];
+      var scaredGenres = ['horror', 'mystery', 'thriller', 'drama', 'documentary'];
+      var angryGenres = ['action', 'crime', 'thriller']; */
 
     // will populate the html elements and return html
     function showRecs(movieList) {
         $('.mood-choice').hide();
         var movieResult = $('.template').clone();
-        movieResult.()
-
+        movieResult();
     }
 
     // will query the api and receive the object and print
@@ -25,9 +24,12 @@ $(document).ready(function () {
                 api_key: 'b036e4fb522494bd075e0c895ed017a0',
                 with_genres: genre
             }
-        }).done(function (result) {
+        }).done(function (movies) {
             console.log(result);
-            showRecs(result);
+            $.each(movies.results, function (index, value) {
+                var moviesQuery = showRecs(value);
+                // $('.')
+            });
         });
     };
 
